@@ -34,6 +34,8 @@ function* addToReserve({id}){
     }
   
     yield put(addReserveSucess(data))
+
+
   }
 
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import Header from './component/Header';
 import Routes from "./router";
+import history from './services/history';
 import store from './store';
 import "./style.css";
 
 export default function App() {
   return (
     <Provider store ={ store}>
-      <BrowserRouter>
-        <Header />
-        <Routes />
-      </BrowserRouter>
+        <Router history={history} >
+          <Header />
+          <Routes />
+        </Router>
     </Provider>
   );
 }

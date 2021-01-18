@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { MdFlightTakeoff } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import api from '../../services/api';
+import { addReserveRequest } from '../../store/modules/reserve/actions';
 import './style.css';
-repeiimport { addReserveRequest } from '../../store/modules/reserve/actions';
 
 export default function Home(){
   const dispatch = useDispatch();
