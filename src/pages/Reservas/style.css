@@ -22,6 +22,11 @@
   border: 0;
   background-color: #fff;
 }
+#amount span{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 footer button{
   border: 0;
   display: flex;
